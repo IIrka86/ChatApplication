@@ -1,0 +1,132 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(81, 6, 191, 0.93);
+    z-index: 100;
+}
+header h2{
+     color: #fff7fb;
+     font-size: 20px;
+     font-weight: bold;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin: 0;
+ }
+header h1{
+    color: #fff7fb;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+footer {
+    background: rgba(0, 0, 0, 0.71);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+footer p {
+    margin-bottom: 0;
+    font-size: 26px;
+}
+body div{
+    font-size: medium;
+    font-weight: bold;
+}
+.first{
+    padding-top: 120px;
+}
+.last{
+    padding-bottom: 70px;
+}
+tr.not-exist{
+    line-height: 4;
+}
+tr.not-exist th{
+    text-align: center;
+    color: rgb(255, 142, 0);
+    font-size: 20px;
+    margin: 0 25px;
+}
+table{
+    border: none;
+    width: 60%;
+}
+table.inner-table tr{
+    border-right: none;
+}
+.inner-table tr:first-child{
+    border-top: none;
+}
+.inner-table tr:last-child{
+    border-bottom: none;
+}
+.inner-table tr.not-exist{
+    line-height: 2;
+}
+.inner-table tr.not-exist th{
+    text-align: center;
+    color: rgb(255, 142, 0);
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+input[type=text],
+input[type=password]{
+    border: solid 2px rgba(81, 6, 191, 0.93);
+    min-height: 28px;
+    width: 60%;
+}
+input[type=submit],
+input[type=button]{
+    background: rgba(81, 6, 191, 0.93);
+    color: #fff7fb;
+    border: none;
+    font-size: large;
+    width: 30%;
+}
+#loginForm{
+    border: solid 2px rgba(81, 6, 191, 0.93);
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5%;
+    padding: 30px 10px;
+    text-align: center;
+}
+#loginForm input[type=text],
+#loginForm input[type=password]{
+    width: 50%;
+}
+#loginForm input[type=submit]{
+    margin-top: 10px;
+    width: 95%;
+}
+#loginForm input[type=radio]{
+    background: rgba(81, 6, 191, 0.93);
+}
+#loginForm label{
+    color: rgba(81, 6, 191, 0.93);
+}
+a {
+    color: rgba(81, 6, 191, 0.93);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: color .25s, padding .25s;
+}
+a:hover{
+
+    color: #171717;
+    text-decoration: none;
+}
+div.info h2{
+    color: rgba(81, 6, 191, 0.93);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
