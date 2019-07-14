@@ -67,7 +67,11 @@ public class UserComponent implements UserEvents, AdminEvents{
 
     public User getUserById(int id) {
         synchronized (users) {
-            return users.get(id - 1);
+            if(id <= users.size()) {
+                return users.get(id - 1);
+            }else {
+                return null;
+            }
         }
     }
 

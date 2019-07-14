@@ -36,10 +36,14 @@ public class Server implements ConnectionListener{
     @Override
     public synchronized void onDisconnect(Connection connection) {
         User user = userService.getUserById(connection.getUserId());
-        userService.removeConnection(user);
-        userService.exitUser(user);
+        if (user != null){
+            userService.removeConnection(user);
+            userService.exitUser(user);
+            logger.info("Disconnect client " + user.getName());
+        }else{
+            logger.info("Disconnect client ");
+        }
         connection.disconnect();
-        logger.info("Disconnect client " + user.getName());
     }
 
     @Override
